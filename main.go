@@ -26,7 +26,7 @@ func main() {
 			case event := <-watcher.Events:
 				handleEvent(event)
 			case err := <-watcher.Errors:
-				log.Println("error:", err)
+				log.Println("Error:", err)
 			}
 		}
 	}()
